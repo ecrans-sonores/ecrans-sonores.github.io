@@ -40,6 +40,7 @@ body {
 header {
 	position: relative;
 	height: 85vh;
+	animation: fadein 0.5s ease-out;
 }
 
 header:after {
@@ -109,6 +110,8 @@ h3 {
 	font-weight: 900;
 	float: left;
 	line-height: 26px;
+	opacity: 0;
+	animation: fadein 0.5s ease-out 0.2s forwards;
 }
 
 .author {
@@ -116,11 +119,15 @@ h3 {
 	clear: both;
 	float: left;
 	margin-top: 14px;
+	opacity: 0;
+	animation: fadein 0.5s ease-out 0.4s forwards;
 }
 
 .content {
 	width: 100%;
 	margin-top: 100px;
+	opacity: 0;
+	animation: showup 0.5s ease-out 0.5s forwards;
 }
 
 .panorama {
@@ -164,4 +171,14 @@ video {
 	margin-left: 80px;
 	width: calc(100% - 160px);
 	/*background: red;*/
+}
+
+@keyframes fadein {
+	0% { opacity: 0; transform: translate3d(0,20px,0); }
+	100% { opacity: 1; transform: translate3d(0,0px,0); }
+}
+
+@keyframes showup {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
