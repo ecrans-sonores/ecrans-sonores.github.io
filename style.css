@@ -194,3 +194,32 @@ video {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
 }
+
+@media screen and (max-width: 1400px), screen and (max-device-width: 1400px) {
+	.panorama, audio, video, img, .proxi-player, iframe, .heading-image {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px), screen and (max-device-width: 800px) {
+	.container {
+		margin-top: 50px;
+		margin-left: 20px;
+		width: calc(100% - 40px);
+		/*background: red;*/
+	}
+
+	header {
+		text-align: center;
+	}
+
+	.subtitle, .author {
+		width: 100%;
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.subtitle {
+		margin-top: 40px;
+	}
+}
