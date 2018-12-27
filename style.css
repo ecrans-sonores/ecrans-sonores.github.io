@@ -35,6 +35,7 @@
 body {
 	font-family: Bell Gothic;
 	border: 0;
+	padding-bottom: 100px;
 }
 
 header {
@@ -62,10 +63,12 @@ header:before {
 h1 {
 	font-weight: 900;
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 45px;
 }
 
 h2 {
+	margin-top: 70px;
+	margin-bottom: 50px;
 	clear: both;
 	float: left;
 	display: inline-block;
@@ -90,6 +93,7 @@ h2:before {
 }
 
 h3 {
+	margin-top: 40px;
 	clear: both;
 	text-transform: uppercase;
 }
@@ -127,13 +131,20 @@ h3 {
 	width: 100%;
 	margin-top: 100px;
 	opacity: 0;
-	animation: showup 0.5s ease-out 0.5s forwards;
+	animation: showup 0.5s ease-out 0.8s forwards;
+}
+
+img, iframe {
+	display: block;
+	clear: both;
 }
 
 .panorama {
-	display: block;
-	clear: both;
 	width: 70%;
+}
+
+.proxi-player {
+	width: 600px;
 }
 
 .eszett {
@@ -141,10 +152,11 @@ h3 {
 }
 
 audio {
+	width: 70%;
 	margin-top: 20px;
 	clear: both;
 	float: left;
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 video {
