@@ -57,7 +57,6 @@ header:before {
 	display: block;
 	width: 100%;
 	border-bottom: 1px solid black;
-
 }
 
 h1 {
@@ -123,8 +122,31 @@ h3 {
 	clear: both;
 	float: left;
 	margin-top: 14px;
+	margin-bottom: 80px;
 	opacity: 0;
 	animation: fadein 0.5s ease-out 0.4s forwards;
+}
+
+.downloadbook {
+	color: black;
+	display: block;
+}
+
+.downloadbook p {
+	text-decoration: underline;
+	float: left;
+	margin: 25px 0 0 20px;
+}
+
+.downloadbook p:after {
+	text-decoration: none;
+	font-size: 14px;
+	content: " ⬇︎";
+}
+
+.downloadbook img {
+	width: 50px;
+	float: left;
 }
 
 .content {
